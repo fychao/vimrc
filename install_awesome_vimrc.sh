@@ -1,8 +1,4 @@
 #!/bin/sh
-git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim_runtime/my_plugins/tabnine-vim
-git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-~/.bash_it/install.sh
-
 set -e
 
 cd ~/.vim_runtime
@@ -22,3 +18,8 @@ set rtp+=~/tabnine-vim
 ' > ~/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
+
+git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim_runtime/my_plugins/tabnine-vim
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+
