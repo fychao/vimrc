@@ -21,7 +21,7 @@ echo '# AUGUST GIT INFO
 git config --global user.email "AugustChao@narlabs.org.tw"
 git config --global user.name "August F.Y. Chao"
 git config credential.helper cache
-git config --global credential.helper 'store --file ~/.aug_git-credentials'
+git config --global credential.helper "store --file ~/.aug_git-credentials"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 ' >> ~/.bashrc
