@@ -18,3 +18,4 @@ sudo curl -L https://raw.githubusercontent.com/docker/compose/1.25.0/contrib/com
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo service docker restart
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 100
