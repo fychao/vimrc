@@ -46,15 +46,9 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
 
-<<<<<<< HEAD
-"let g:ctrlp_map = '<c-f>'
-map <leader>j :CtrlP<cr>
-"map <c-b> :CtrlPBuffer<cr>
-=======
 let g:ctrlp_map = '<C-f>'
 map <leader>j :CtrlP<cr>
 map <C-b> :CtrlPBuffer<cr>
->>>>>>> upstream/master
 
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
@@ -153,26 +147,6 @@ nnoremap <silent> <leader>z :Goyo<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ale (syntax checker and linter)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-<<<<<<< HEAD
-"" Python
-"let g:syntastic_python_checkers=['pyflakes']
-"
-"" Javascript
-"let g:syntastic_javascript_checkers = ['jshint']
-"
-"" Go
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
-"
-"" Custom CoffeeScript SyntasticCheck
-"func! SyntasticCheckCoffeescript()
-"    let l:filename = substitute(expand("%:p"), '\(\w\+\)\.coffee', '.coffee.\1.js', '')
-"    execute "tabedit " . l:filename
-"    execute "SyntasticCheck"
-"    execute "Errors"
-"endfunc
-"nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
-=======
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'python': ['flake8'],
@@ -187,7 +161,6 @@ let g:ale_set_highlights = 0
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
->>>>>>> upstream/master
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
